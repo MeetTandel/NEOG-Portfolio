@@ -211,11 +211,9 @@ hr {
     margin: 0.5rem auto;
     color: white;
 }
-
-.blog{
-    color: #141f58;
+ul{
+    padding: 0;
 }
-
 .showcase-list h1 {
     margin: 0.5rem;
 }

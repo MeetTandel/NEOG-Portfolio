@@ -1,4 +1,5 @@
-const list = document.querySelectorAll(".showcase-list")
+const projects = document.querySelectorAll(".showcase-list")
+const blogs = document.querySelectorAll(".blog")
 
 const backgroundImages = [
     "profit-and-loss",
@@ -14,15 +15,21 @@ const backgroundImages = [
     "cli-app"
 ]
 
+const blogImages = [
+    "css",
+    "html"
+]
+
 let index = 0;
-
-console.log(list)
-// list[0].style.backgroundImage
-
-list.forEach(l =>{
-    let background = backgroundImages[index];
-    let imageSource = "../images/project-images/" + background + ".png";
-    console.log(imageSource) 
+projects.forEach(project =>{
+    let imageName = backgroundImages[index];
+    let imageSource = "../images/project-images/" + imageName + ".png";
+    project.style.backgroundImage = `linear-gradient(to bottom, rgba(0,0,0,0.75), rgba(0,0,0,0.8)), url(${imageSource})`;
     index++;
-    l.style.backgroundImage = `linear-gradient(to bottom, rgba(0,0,0,0.75), rgba(0,0,0,0.8)), url(${imageSource})`;
 })
+
+for(let i = 0; i < blogs.length; i++){
+    let imageName = blogImages[i];
+    let imageSource ="../images/blog-images/" + imageName + ".png";
+    blogs[i].style.backgroundImage = `linear-gradient(to bottom, rgba(0,0,0,0.75), rgba(0,0,0,0.8)), url(${imageSource})`;
+}
