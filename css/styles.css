@@ -203,6 +203,7 @@ hr {
 .showcase-list {
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center center;
     padding: 1rem;
     padding-bottom: 2rem;
     border-radius: 1rem;
