@@ -129,8 +129,7 @@ hr {
 /** header **/
 
 .hero {
-    padding: 2rem;
-    padding-bottom: 0;
+    padding: 3rem;
 }
 
 .hero .hero-img {
@@ -204,11 +203,11 @@ hr {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
-    padding: 1rem;
-    padding-bottom: 2rem;
+    padding: 4rem;
+    padding-bottom: 4rem;
     border-radius: 1rem;
     text-align: center;
-    margin: 0.5rem auto;
+    margin: 0.5rem auto 3rem;
     color: white;
 }
 ul{
